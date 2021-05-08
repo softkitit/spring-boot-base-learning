@@ -9,6 +9,9 @@ target/
 .settings
 .springBeans
 
+# jenv
+.java-version
+
 ### IntelliJ IDEA ###
 .idea
 *.iws

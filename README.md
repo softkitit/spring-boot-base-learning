@@ -12,6 +12,10 @@
 ![](https://img.shields.io/badge/lombok-✓-blue.svg)
 ![](https://img.shields.io/badge/jwt-✓-blue.svg)
 ![](https://img.shields.io/badge/swagger_2-✓-blue.svg)
+![](https://img.shields.io/badge/junit_5-✓-green.svg)
+![](https://img.shields.io/badge/mockito-✓-green.svg)
+![](https://img.shields.io/badge/jupiter-✓-green.svg)
+![](https://img.shields.io/badge/jacoco-✓-green.svg)
 
 ***
 
