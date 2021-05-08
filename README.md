@@ -24,8 +24,13 @@
 ```
 spring-boot-jwt/
  │
+ ├── utils
+ │   └── SpringLearningProject.postman_collection.json
  ├── src/main/java/
  │   └── com.softkit
+ │       ├── annotation
+ │       │   └── PasswordConstraintValidator.java
+ │       │   └── ValidPassword.java
  │       ├── configuration
  │       │   └── SwaggerConfig.java
  │       │
@@ -346,7 +351,7 @@ $ git clone https://github.com/<your-user>/spring-boot-base-learning
 3. Navigate into the folder  
 
 ```
-$ cd spring-boot-jwt
+$ cd spring-boot-base-learning
 ```
 
 4. Install dependencies
