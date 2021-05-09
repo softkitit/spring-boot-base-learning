@@ -1,4 +1,4 @@
-# Spring Boot JWT
+# Spring Boot Learning Starter
 
 ![](https://img.shields.io/badge/build-success-brightgreen.svg)
 
@@ -75,6 +75,15 @@ spring-boot-jwt/
  ├── src/main/resources/
  │   └── application.yml
  │   └── logback-spring.xml
+ ├── src/test/java/com/softkit
+ │   └── AbstractControllerTest.java
+ │   └── ContextLoadTest.java
+ │   └── UserIntegrationControllerTests.java
+ │   └── UserServiceTests.java
+ │   └── UserServiceWithMockTests.java
+ │   └── UserServiceWithSpyTests.java
+ ├── src/test/resources/
+ │   └── application.yml
  │
  ├── .gitignore
  ├── LICENSE

@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:test_db;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    # url: jdbc:mysql://localhost:3306/user_db
+    # url: jdbc:postgresql://localhost:5432/user_db
+    username: root
+    password: root
+  tomcat:
+    max-wait: 20000
+    max-active: 50
+    max-idle: 20
+    min-idle: 15
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        # dialect: org.hibernate.dialect.MySQL8Dialect
+        # dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+        id:
+          new_generator_mappings: false
+
+server:
+  port: 8080 # This is the default port anyway, but you can change it here
+  error:
+    include-stacktrace: never
+    include-exception: false
+security:
+  jwt:
+    token:
+      secret-key: secret-key
+      expire-length: 300000 # 5 minutes duration by default: 5 minutes * 60 seconds * 1000 milliseconds
+      
+UserController:
+  signin: Authenticates user and returns its JWT token.
+  signup: Creates user and returns its JWT token
+  delete: Deletes specific user by username
+  search: Returns specific user by username
+  me: Returns current user's data
