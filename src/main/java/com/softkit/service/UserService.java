@@ -57,7 +57,7 @@ public class UserService {
         return null;
     }
 
-//  method must create a new access token, because old one expired or will expire soon, doesn't matter
+//  method must create a new access token, similar to login
     public String refresh(String username) {
 //        TODO implement
         return null;        
