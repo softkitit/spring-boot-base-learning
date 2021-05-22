@@ -1,0 +1,25 @@
+image: docker:stable
+services:
+  - docker:dind
+variables:
+  CONTAINER_IMAGE: registry.gitlab.com/$CI_PROJECT_PATH
+build:
+  stage: build
+  only:
+    - master
+  script:
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker pull $CONTAINER_IMAGE:latest || true
+    - docker build -f Dockerfile --cache-from $CONTAINER_IMAGE:$CI_COMMIT_REF_NAME --tag $CONTAINER_IMAGE:$CI_COMMIT_REF_NAME .
+    - docker push $CONTAINER_IMAGE:$CI_COMMIT_REF_NAME
+
+#production:
+#  stage: deploy
+#  image: ruby:latest
+#  script:
+#    - apt-get update -qy
+#    - apt-get install -y ruby-dev
+#    - gem install dpl --verbose
+#    - dpl --provider=heroku --app=$HEROKU_APP_PRODUCTION --api-key=$HEROKU_API_KEY
+#  only:
+#    - master
