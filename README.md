@@ -29,7 +29,7 @@
 spring-boot-jwt/
  │
  ├── utils
- │   └── SpringLearningProject.postman_collection.json
+ │   └── spring_postman_collection.json
  ├── src/main/java/
  │   └── com.softkit
  │       ├── annotation
@@ -399,7 +399,7 @@ server:
 }
 ```
 
-8. Import postman collection you can find it by path ``utils/SpringLearningProject.postman_collection.json``. This collection includes base signup, signin and whoami endpoint calls. Also setting the header is automated there, so once you signed in you will be able to call whoami. You can check Tests tab on Signin method to understand how it's done there. Play with it, achive validation exceptions, set wrong email address for signup (e.g. without `@` symbol), see the result!
+8. Import postman collection you can find it by path ``utils/spring_postman_collection.json``. This collection includes base signup, signin and whoami endpoint calls. Also setting the header is automated there, so once you signed in you will be able to call whoami. You can check Tests tab on Signin method to understand how it's done there. Play with it, achive validation exceptions, set wrong email address for signup (e.g. without `@` symbol), see the result!
 
 
 Further instructions you will get from your mentor if you are part of our study class. If not then signup we will be glad to teach you, future senior developer ◉_◉. [Softkit Contact Us](https://softkitit.com/careers)  
