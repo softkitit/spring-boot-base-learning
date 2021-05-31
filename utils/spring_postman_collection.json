@@ -83,7 +83,7 @@
 		{
 			"name": "Whoami",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
