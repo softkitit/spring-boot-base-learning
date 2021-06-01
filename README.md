@@ -199,7 +199,8 @@ Whenever the user wants to access a protected route or resource, the user agent 
 
 This is a stateless authentication mechanism as the user state is never saved in server memory. The server's protected routes will check for a valid JWT in the Authorization header, and if it's present, the user will be allowed to access protected resources. As JWTs are self-contained, all the necessary information is there, reducing the need to query the database multiple times.
 
-This allows you to fully rely on data APIs that are stateless and even make requests to downstream services. It doesn't matter which domains are serving your APIs, so Cross-Origin Resource Sharing (CORS) won't be an issue as it doesn't use cookies.
+This allows you to fully rely on data APIs that are stateless and even make requests to downstream services. It doesn't matter which domains are serving your APIs, 
+so Cross-Origin Resource Sharing (CORS) won't be an issue as it doesn't use cookies.
 
 The following diagram shows this process:
 
